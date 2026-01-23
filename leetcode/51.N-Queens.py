@@ -36,16 +36,15 @@ backtrack(0)"""
 
 
 # all the possible path
-n=4
+n=8
 sol=[['.']*n for _ in range(n)]
 col=set()
 d1=set()
 d2=set()
-
+res=[]
 def backtrack(r):
     if r==n:
-        for i in range(n):
-            print("".join(sol[i]))
+        res.append(["".join(sol[i]) for i in range(n)])
         print("")
         return
     for c in range(n):
@@ -64,3 +63,5 @@ def backtrack(r):
         d1.remove(r+c)
         d2.remove(r-c)
 backtrack(0)
+print(res)
+print(len(res))
