@@ -8,7 +8,6 @@ def knights_tour(x,y,count=0):
         solution[x][y]=1
         global m
         m=min(m,count)
-        print(solution)
         return False
     if count>m:
         return False
