@@ -15,7 +15,6 @@ def backtrack(r):
             print("".join(sol[i]))
         print("")
         return True
-    
     for c in range(n):
         if c in col or r+c in d1 or r-c in d2:
             continue
