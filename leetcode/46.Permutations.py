@@ -1,4 +1,4 @@
-
+from typing import List
 
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
@@ -14,3 +14,5 @@ class Solution:
                 c.pop()
         backtrack()
         return r
+obj=Solution()
+print(obj.permute([1,2,3]))
