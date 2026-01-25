@@ -1,3 +1,4 @@
+from typing import List
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         sol=[[0]*len(board[0]) for i in range(len(board))]
@@ -28,5 +29,6 @@ class Solution:
                     return True
         return False
 
+obj=Solution()
 
-
+print(obj.exist([["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]],"ABCCED"))
