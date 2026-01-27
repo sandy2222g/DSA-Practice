@@ -10,3 +10,5 @@ class Solution:
             return left
         else:
             return right
+obj=Solution()
+print(obj.longestPalindrome("babad"))
