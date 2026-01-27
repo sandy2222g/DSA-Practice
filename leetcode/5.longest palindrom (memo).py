@@ -9,3 +9,5 @@ class Solution:
         right = self.longestPalindrome(s[:-1])
 
         return left if len(left) > len(right) else right
+obj=Solution()
+print(obj.longestPalindrome("babaddtattarrattatddetartrateedredividerb"))
