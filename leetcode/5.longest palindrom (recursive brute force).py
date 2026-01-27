@@ -1,3 +1,6 @@
+# time limt exceed at test case "babaddtattarrattatddetartrateedredividerb"
+
+
 class Solution:
     def longestPalindrome(self, s: str) -> str:
 
