@@ -64,3 +64,24 @@ class Solution:
         
         
         """
+
+#In Place dp
+class Solution:
+    def minPathSum(self, grid: list[list[int]]) -> int:
+        n=len(grid)
+        mm=len(grid[0])
+        for i in range(n):
+            for j in range(mm):
+                if i==j==0:
+                    continue
+                m=float('inf')
+                if j!=0:
+                    m=min(m,grid[i][j-1])
+                if i!=0:
+                    m=min(m,grid[i-1][j])
+                grid[i][j]+=m
+        return grid[-1][-1]
+                
+obj=Solution()
+print(obj.minPathSum([[1,3,1],[1,5,1],[4,2,1]]))                
+                
