@@ -15,3 +15,26 @@ class Solution:
 
 obj=Solution()
 print(obj.uniquePathsWithObstacles([[0,0,0,0],[0,0,1,0],[0,0,0,0],[1,0,0,0]]))
+
+
+"""
+
+    **memoization**
+
+from functools import lru_cache
+class Solution:
+    def uniquePathsWithObstacles(self, ob: List[List[int]]) -> int:
+        if ob[0][0]==1:
+            return 0
+        n=len(ob)
+        m=len(ob[0])
+        @lru_cache(None)
+        def dfs(i,j):
+            if i<0 or j<0 or ob[i][j]==1:
+                return 0
+            if j==i==0:
+                return 1
+            return dfs(i-1,j)+dfs(i,j-1)
+        return dfs(n-1,m-1)
+
+"""
