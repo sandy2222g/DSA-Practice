@@ -44,7 +44,21 @@ class Solution:
         
         
         
-        
+        **Tabulation (1D DP array)**
+
+        class Solution:
+    def minPathSum(self, grid: List[List[int]]) -> int:
+        n=len(grid)
+        m=len(grid[0])
+        dp=[float('inf')]*m
+        dp[0]=0
+        for i in range(n):
+            for j in range(m):
+                if j==0:
+                    dp[j]=dp[j]+grid[i][j]
+                else:
+                    dp[j]=min(dp[j],dp[j-1])+grid[i][j]
+        return dp[m-1] 
         
         
         
