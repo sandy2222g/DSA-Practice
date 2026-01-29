@@ -84,4 +84,3 @@ class Solution:
                 
 obj=Solution()
 print(obj.minPathSum([[1,3,1],[1,5,1],[4,2,1]]))                
-                
