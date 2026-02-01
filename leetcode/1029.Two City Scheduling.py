@@ -9,3 +9,5 @@ class Solution:
             else:
                 t+=costs[i][1]
         return t
+obj=Solution()
+print(obj.twoCitySchedCost([[10,20],[30,200],[400,50],[30,20]]))
