@@ -15,3 +15,5 @@ class Solution:
             i+=1
 
         return i==n-1
+obj=Solution()
+print(obj.isTrionic([2,1,3]))
