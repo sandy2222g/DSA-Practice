@@ -16,3 +16,5 @@ class Solution:
                 if n:
                     st.append(int(n)*k)
         return "".join(st)
+obbj=Solution()
+print(obbj.decodeString("3[a]2[bc]"))
