@@ -9,3 +9,5 @@ class Solution:
                 res+=1
                 b-=1
         return res
+obj=Solution()
+print(obj.minimumDeletions("aababbab"))
