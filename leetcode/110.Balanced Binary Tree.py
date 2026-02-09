@@ -1,4 +1,4 @@
-#py3
+
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
         def dfs(node):
