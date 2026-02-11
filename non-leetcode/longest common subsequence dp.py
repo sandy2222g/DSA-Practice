@@ -9,4 +9,4 @@ def tabula(s1: str, s2: str) -> int:
                 dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
     return dp[n][m]
 
-print(tabula('abcd','abc'))
+print(tabula("ezupkr","ubmrapg"))
