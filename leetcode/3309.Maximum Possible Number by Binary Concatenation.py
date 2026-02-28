@@ -1,5 +1,5 @@
 class Solution:
-    def maxGoodNumber(self, nums: List[int]) -> int:
+    def maxGoodNumber(self, nums: list[int]) -> int:
         s=[bin(i)[2:] for i in nums]
         s.sort(reverse=True,key=lambda x:x*10)
         print(s)
