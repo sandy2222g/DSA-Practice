@@ -1,5 +1,5 @@
 n=int(input())
-r=[list(map(int,input().split())) for _ in range(n)]
+r=[list(map(int,input().split())) for _ in range(n)]        
 sol=[[0]*n for _ in range(n)]
 def bt(x,y):
     if x>=n or y>=n or r[x][y]==1:
